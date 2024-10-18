@@ -1,0 +1,117 @@
+@import url(_reset.css);
+body {
+  background-image: url(./images/road-g9875459d1_1920\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 22px 0 14px;
+}
+
+.menu-list {
+  display: flex;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-item a {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+.list-item a::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+}
+.list-item a.active::after {
+  opacity: 1;
+}
+
+.leng-menu {
+  display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.leng-menu .leng-item {
+  color: #B7B7B7;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.leng-menu .leng-item.active {
+  color: #ffffff;
+}
+
+.header-content {
+  position: relative;
+}
+.header-content h1 {
+  font-size: 48px;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 150%;
+  margin-top: 117px;
+}
+.header-content a {
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 12px 48px;
+  background-color: #DB2512;
+  display: inline-block;
+  margin-top: 53px;
+}
+
+.header-content-boxes {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 21px;
+       column-gap: 21px;
+}
+
+.content-box {
+  padding: 39px 48px 37px 39px;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+.content-box h3 {
+  letter-spacing: 1.5px;
+  line-height: 150%;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 21px;
+}
+.content-box span {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #B7B7B7;
+  margin-top: 15px;
+}/*# sourceMappingURL=style.css.map */
