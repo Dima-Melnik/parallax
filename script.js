@@ -1,6 +1,7 @@
 let display = document.querySelector('.main__content-score');
 let button = document.querySelector('.main__content-btn');
 let reload = document.querySelector('.reset__score');
+const anim = document.querySelector('.anim-kym');
 
 button.addEventListener('click', (e) => {
     switch (e.target.innerText) {
@@ -20,3 +21,10 @@ button.addEventListener('click', (e) => {
 reload.addEventListener('click', (e) => {
     display.innerText = '0';
 });
+
+button.addEventListener('click', () => {
+    anim.classList.add('anim-kym--active');
+    setTimeout(() => {
+        anim.classList.remove('anim-kym--active');
+    }, 500);
+})

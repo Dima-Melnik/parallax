@@ -148,8 +148,40 @@ body {
   font-size: 60px;
   font-weight: 700;
   color: rgb(18, 25, 59);
+  transition: all 0.2s ease;
+}
+.main__content-btn:active {
+  box-shadow: 0px 10px 40px 10px rgba(212, 217, 232, 0.2);
+  transform: translateY(1px);
 }
 .main__content-score {
   font-size: 60px;
   margin-bottom: 20px;
+}
+
+.anim-kym {
+  position: absolute;
+  left: 48%;
+  bottom: 50%;
+  font-size: 22px;
+  color: rgb(18, 25, 59);
+  display: none;
+  animation: kym 2s infinite;
+}
+
+.anim-kym--active {
+  display: block;
+}
+
+@keyframes kym {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-75px);
+  }
+  100% {
+    transform: translateY(-75px);
+    opacity: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
