@@ -26,5 +26,5 @@ button.addEventListener('click', () => {
     anim.classList.add('anim-kym--active');
     setTimeout(() => {
         anim.classList.remove('anim-kym--active');
-    }, 500);
+    }, 400);
 })
