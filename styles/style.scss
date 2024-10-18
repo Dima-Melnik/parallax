@@ -1,3 +1,61 @@
-@import url(_reset.css);
+@import 'reset';
+@import 'global';
 
- 
+body{
+    background-color: rgb(18, 25, 59);
+}
+
+.logo{
+    display: flex;
+    align-items: baseline;
+    column-gap: 6px;
+    & span{
+        font-size: 36px;
+    }
+}
+
+.nav__btn{
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & span{
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        display: inline-block;
+        border-radius: 15px;
+    }
+}
+
+.header{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.main{
+    text-align: center;
+    &__content{
+        margin-top: 200px;
+    }
+    &__content-btn{
+        padding: 40px 50px;
+        background-color: #e0d2c2;
+        border-radius: 50%;
+        border: 10px #f8ca95 solid;
+        box-shadow: 0px 10px 40px rgba(212, 217, 232, 0.2);
+        font-size: 60px;
+        font-weight: 700;
+        color: rgb(18, 25, 59);
+    }
+    &__content-score{
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    &__score-block{
+    }
+}
