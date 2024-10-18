@@ -58,3 +58,7 @@ button {
     cursor: pointer;
 }
 
+*:focus{
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
